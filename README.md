@@ -6,7 +6,8 @@ https://user-images.githubusercontent.com/7581348/208559445-a449cef6-0ae1-4c08-b
 
 Recycle your plastic better with Artificial Intelligence ♻️
 
-👉 [Try it here](https://myrecyclingrepo.vercel.app/)
+👉 [Try it here cuz its totally awesome](https://myrecyclingrepo.vercel.app/)
+
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alyssaxuu/ecosnap)
 

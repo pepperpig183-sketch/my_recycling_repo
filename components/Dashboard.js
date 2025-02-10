@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/*import React, { useEffect, useState } from "react";
 import styles from "./../styles/Dashboard.module.css";
 import HowTo from "./HowTo";
 
@@ -112,3 +112,4 @@ const Dashboard = (props) => {
 };
 
 export default Dashboard;
+*/

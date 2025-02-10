@@ -12,7 +12,7 @@ const HowTo = (props) => {
         "https://images.unsplash.com/photo-1635766054474-ebaba5355bd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
     {
-      name: "Crisp packets",
+      name: "Chip bags",
       description: "Recyclable out of home",
       url: "https://www.recyclenow.com/recycle-an-item/crisp-packets",
       image:
@@ -33,14 +33,14 @@ const HowTo = (props) => {
         "https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
     },
     {
-      name: "Foil",
+      name: "Aluminum Foil",
       description: "Recyclable at home",
       url: "https://www.recyclenow.com/recycle-an-item/foil",
       image:
         "https://images.unsplash.com/photo-1594255897691-9d1edad1ecfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
     },
     {
-      name: "Clothing and textiles",
+      name: "Clothing and other textiles",
       description: "Recyclable out of home",
       url: "https://www.recyclenow.com/recycle-an-item/clothing-textiles",
       image:
@@ -75,7 +75,7 @@ const HowTo = (props) => {
         "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
     {
-      name: "Beauty and grooming packaging",
+      name: "Beauty and makeup packaging",
       description: "Take-back recycling scheme",
       url: "https://www.recyclenow.com/news-and-campaigns/take-back-schemes-for-beauty-grooming-packaging-difficult-recycle",
       image:
@@ -131,14 +131,14 @@ const HowTo = (props) => {
         "https://images.unsplash.com/photo-1582401656496-9d75f95f9018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2VyZWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
-      name: "Crisp packets",
+      name: "Crisp packets 2",
       description: "Recyclable out of home",
       url: "https://www.recyclenow.com/recycle-an-item/crisp-packets",
       image:
         "https://images.unsplash.com/photo-1579384264577-79580c9d3a36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y3Jpc3BzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
-      name: "Cling film",
+      name: "Cling wrap",
       description: "Not recyclable",
       url: "https://www.recyclenow.com/recycle-an-item/cling-film",
       image:
