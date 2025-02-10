@@ -22,10 +22,7 @@ const Desktop = (props) => {
       
       
       
-      <div className={styles.qrcode}>
-        <img src="qrcode.png" />
-        <span>Open on your phone (update this) ✨</span>
-      </div>
+      
     </div>
   );
 };
