@@ -19,10 +19,6 @@ const Desktop = (props) => {
         />
       )}
      
-      
-      
-      
-      
     </div>
   );
 };
