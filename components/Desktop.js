@@ -23,8 +23,7 @@ const Desktop = (props) => {
         target="_blank"
         className={styles.awards}
       >
-        <img className={styles.award1} src="./award1.svg" />
-        <img className={styles.award2} src="./award2.svg" />
+        
       </a>
       <div className={styles.badge}>
         <img src="logo-with-back.svg" />
