@@ -36,25 +36,25 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          sustAInable - Recycle your plastic better with Artificial Intelligence
+          EcoSnap - Recycle your plastic better with Artificial Intelligence
         </title>
         <meta
           name="title"
-          content="sustAInable - Recycle your plastic better with Artificial Intelligence"
+          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
         />
         <meta
           name="description"
           content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://myrecyclingrepo.vercel.app/" />
+        <meta property="og:url" content="https://ecosnap.vercel.app/" />
         <meta
           property="og:title"
-          content="12sustAInable - Recycle your plastic better with Artificial Intelligence"
+          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
         />
         <meta
           property="og:description"
-          content="11sustAInable is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta
           property="og:image"
