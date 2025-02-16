@@ -48,30 +48,6 @@ const Dashboard = (props) => {
 
   return (
     <div className={styles.dashboard}>
-      {support && (
-        <a
-          href="https://www.producthunt.com/posts/ecosnap"
-          target="_blank"
-          className={styles.support}
-          onClick={() => {
-            setSupport(false);
-            localStorage.setItem("support", false);
-          }}
-        >
-          <img
-            src="closesupport.svg"
-            className={styles.closesupport}
-            onClick={handleSupport}
-          />
-          <img src="support.svg" className={styles.supportimg} />
-          <div className={styles.supportinfo}>
-            <div className={styles.supporttitle}>Support EcoSnap</div>
-            <div className={styles.supportdesc}>
-              We're live on Product Hunt, we'd love your support!
-            </div>
-          </div>
-        </a>
-      )}
       <div className={styles.nav}>
         <div className={styles.header}>Dashboard</div>
         <div className={styles.right}>
