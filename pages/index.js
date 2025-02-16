@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import Desktop from "../components/Desktop";
 
 export default function Home() {
-  const [region, setRegion] = useState(0);
+  //const [region, setRegion] = useState(0);
   const [onboarding, setOnboarding] = useState(false);
   const [check, setCheck] = useState(false);
   const [num, setNum] = useState(0);
@@ -18,9 +18,9 @@ export default function Home() {
       //localStorage.removeItem("region");
       //localStorage.removeItem("onboarding");
 
-      if (localStorage.getItem("region") != null) {
-        setRegion(parseInt(localStorage.getItem("region")));
-      }
+      //if (localStorage.getItem("region") != null) {
+      //  setRegion(parseInt(localStorage.getItem("region")));
+      //}
       if (localStorage.getItem("onboarding") != null) {
         setOnboarding(localStorage.getItem("onboarding"));
       }
@@ -36,7 +36,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          EcoSnap - Recycle your plastic better with Artificial Intelligence
+          sustAInably - Recycle your plastic better with Artificial Intelligence
         </title>
         <meta
           name="title"
