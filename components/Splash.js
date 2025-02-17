@@ -11,7 +11,7 @@ const Splash = (props) => {
 	const [done, setDone] = useState(false);
 	const [done2, setDone2] = useState(false);
 	const [view, setView] = useState(false);
-	const [settings, setSettings] = useState(false);
+	//const [settings, setSettings] = useState(false);
 	const [reset, setReset] = useState(false);
 	const [on, setOn] = useState(false);
 
@@ -47,12 +47,7 @@ const Splash = (props) => {
 			{view &&
 				<Viewer pred={props.pred} setPred={props.setPred} tensor={props.tensor} setTensor={props.setTensor} setView={setView} setNum={props.setNum} num={props.num} region={props.region}/>
 			}
-			{settings && !reset && !on &&
-				<Settings setSettings={setSettings} setReset={setReset} setOn={setOn} />
-			}
-			{done && done2 && !view && !settings &&
-				<Dashboard setSettings={setSettings} setView={setView} num={props.num} setNum={props.setnum} region={props.region} />
-			}
+			
 			{on &&
 				<Onboarding setDone={setDone2} setOn={setOn} />
 			}

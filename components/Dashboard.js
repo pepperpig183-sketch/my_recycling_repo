@@ -50,18 +50,6 @@ const Dashboard = (props) => {
     <div className={styles.dashboard}>
       <div className={styles.nav}>
         <div className={styles.header}>Dashboard</div>
-        <div className={styles.right}>
-          <img
-            src="settings.svg"
-            onClick={() => props.setSettings(true)}
-            className={styles.settings}
-          />
-          <img
-            onClick={() => handleShare()}
-            className={styles.help}
-            src="share.svg"
-          />
-        </div>
       </div>
       {props.num > 0 ? (
         <div className={styles.callout} onClick={() => props.setView(true)}>
