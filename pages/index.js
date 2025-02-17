@@ -36,53 +36,21 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          sustAInably - Recycle your plastic better with Artificial Intelligence
+          sustAInably - recycle your plastic waste with AI!
         </title>
         <meta
           name="title"
-          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
+          content="sustAInably - recycle your plastic waste with AI!"
         />
         <meta
           name="description"
-          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="sustAInably is an AI powered web app that helps you get smarter with recycling your plastic waste through a picture."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://myrecyclingrepo.vercel.app/" />
         <meta
           property="og:title"
-          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
-        />
-        <meta
-          property="og:description"
-          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
-        />
-        <meta
-          property="og:image"
-          content="https://ecosnap.vercel.app/meta.png"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://ecosnap.vercel.app/" />
-        <meta
-          property="twitter:title"
-          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
-        />
-        <meta
-          property="twitter:description"
-          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
-        />
-        <meta
-          property="twitter:image"
-          content="https://ecosnap.vercel.app/meta.png"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <meta
-          name="viewport"
-          content="initial-scale=1, viewport-fit=cover, minimal-ui"
+          content="sustAInably - recycle your plastic waste with AI"
         />
       </Head>
 
