@@ -68,7 +68,7 @@ const Splash = (props) => {
 			{!getStarted &&
 			<div className={styles.splash}>
 				<div className={styles.logo}>
-					<img src="logo_white.svg"/>
+					<img src="logo_white.jpeg"/>
 					sustAInably
 				</div>
 				<div className={styles.illustration}>
