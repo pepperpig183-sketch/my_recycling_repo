@@ -5,30 +5,7 @@ import HowTo from "./HowTo";
 const Dashboard = (props) => {
   const [support, setSupport] = useState(true);
 
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          url: "https://ecosnap.vercel.app",
-          text: "Learn how to recycle plastic with Ecosnap",
-          title: "Ecosnap",
-        })
-        .then(function () {
-          console.log("Successful share");
-        })
-        .catch(function (error) {
-          window.open(
-            "https://twitter.com/intent/tweet?text=Check%20out%20EcoSnap%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fecosnap.vercel.app",
-            "_blank"
-          );
-        });
-    } else {
-      window.open(
-        "https://twitter.com/intent/tweet?text=Check%20out%20EcoSnap%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fecosnap.vercel.app",
-        "_blank"
-      );
-    }
-  };
+  
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -50,13 +27,6 @@ const Dashboard = (props) => {
     <div className={styles.dashboard}>
       <div className={styles.nav}>
         <div className={styles.header}>Dashboard</div>
-        <div className={styles.right}>
-          <img
-            onClick={() => handleShare()}
-            className={styles.help}
-            src="share.svg"
-          />
-        </div>
       </div>
       {props.num > 0 ? (
         <div className={styles.callout} onClick={() => props.setView(true)}>
