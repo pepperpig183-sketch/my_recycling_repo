@@ -68,7 +68,6 @@ const Splash = (props) => {
 			{!getStarted &&
 			<div className={styles.splash}>
 				<div className={styles.logo}>
-					<img src="logo_with_back.svg"/>
 					sustAInably
 				</div>
 				<div className={styles.illustration}>
