@@ -25,7 +25,7 @@ The model is built using [TensorFlow's EfficientNet](https://www.tensorflow.org/
 
 ### Prediction  
 
-To integrate real-time predictions with the front end, the model was converted for compatibility with [TensorFlow.js](https://www.tensorflow.org/js). Using [Web Workers](https://github.com/alyssaxuu/ecosnap/blob/main/components/Worker.js), predictions run smoothly without affecting the app’s performance.  
+To integrate real-time predictions with the front end, the model was converted for compatibility with [TensorFlow.js](https://www.tensorflow.org/js). Using [Web Workers](https://github.com/pepperpig183-sketch/my_recycling_repo/blob/main/components/Worker.js), predictions run smoothly without affecting the app’s performance.  
 
 When an image is uploaded, the app processes it into a tensor, and the model predicts the most probable resin code, displaying relevant recycling information.  
 
