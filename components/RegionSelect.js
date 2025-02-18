@@ -16,15 +16,15 @@ const RegionSelect = (props) => {
 				<div className={option === 1 ? styles.optioncheck : styles.option} onClick={() => setOption(1)}>
 					<div className={styles.info}>
 					<img src={option === 1 ? "checked.svg" : "unchecked.svg"}/>
-						<div className={styles.name}>💂‍♂ London</div>
-						<div className={styles.desc}>Specific plastic recycling advice</div>
+						<div className={styles.name}>California</div>
+						<div className={styles.desc}>Specific plastic recycling advice in the state of California</div>
 					</div>
 				</div>
 				<div className={option === 2 ? styles.optioncheck : styles.option} onClick={() => setOption(2)}>
 				<div className={styles.info}>
 						<img src={option === 2 ? "checked.svg" : "unchecked.svg"}/>
-						<div className={styles.name}>🇬🇧 United Kingdom</div>
-						<div className={styles.desc}>General advice</div>
+						<div className={styles.name}>General US</div>
+						<div className={styles.desc}>General recycling advice</div>
 					</div>
 				</div>
 			</div>
