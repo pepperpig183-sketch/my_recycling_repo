@@ -7,20 +7,14 @@ import Viewer from "./Viewer";
 import Settings from "./Settings";
 
 const Splash = (props) => {
-	const [getStarted, setGetStarted] = useState(false);
-	const [done, setDone] = useState(false);
+	const [getStarted, setGetStarted] = useState(true);
+	const [done, setDone] = useState(true);
 	const [done2, setDone2] = useState(false);
 	const [view, setView] = useState(false);
 	const [settings, setSettings] = useState(false);
 	const [reset, setReset] = useState(false);
 	const [on, setOn] = useState(false);
 
-	useEffect(() => {
-		if (props.region > 0) {
-			setDone(true);
-			setGetStarted(true);
-		}
-	}, [props.region]);
 
 	useEffect(() => {
 		if (props.onboarding) {
