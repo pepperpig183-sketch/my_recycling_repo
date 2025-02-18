@@ -15,9 +15,10 @@ const Splash = (props) => {
 	const [reset, setReset] = useState(false);
 	const [on, setOn] = useState(false);
 
-	setGetStarted(true);
+	
 	useEffect(() => {
 		if (props.onboarding) {
+			setGetStarted(true);
 			setDone2(true);
 		}
 	}, [props.onboarding]);
