@@ -5,200 +5,82 @@ const HowTo = (props) => {
   const [searchField, setSearchField] = useState("");
   const items = [
     {
-      name: "Aerosols",
-      description: "Recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/aerosols",
+      name: "Paper/Cardboard",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#pap",
       image:
-        "https://images.unsplash.com/photo-1635766054474-ebaba5355bd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "https://unsplash.com/photos/white-and-black-paper-lot-_dAnK9GJvdY",
     },
     {
-      name: "Chip bags",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/crisp-packets",
+      name: "Plastics",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#pla",
       image:
         "https://images.unsplash.com/photo-1621447504864-d8686e12698c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1969&q=80",
     },
     {
-      name: "Newspaper",
-      description: "Recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/paper",
+      name: "Glass",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#gla",
       image:
         "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
     {
-      name: "Paper",
-      description: "Recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/paper",
+      name: "Aluminum",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#aluminum",
       image:
         "https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
     },
     {
-      name: "Aluminum Foil",
-      description: "Recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/foil",
+      name: "Batteries",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#batteries",
       image:
         "https://images.unsplash.com/photo-1594255897691-9d1edad1ecfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
     },
     {
-      name: "Clothing and other textiles",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/clothing-textiles",
+      name: "Electronics",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#electronics",
       image:
         "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
     {
-      name: "Light bulbs",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/light-bulbs",
+      name: "Food",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#food",
+      image:
+        "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    },
+    {
+      name: "Lawn Materials",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#lawn",
       image:
         "https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
     },
     {
-      name: "Electrical items",
-      description: "Sometimes recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/electrical-items",
+      name: "Used Oil",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#oil",
       image:
         "https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
     },
     {
-      name: "Carpet and rugs",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/carpet-rugs",
+      name: "Household Hazardous Waste",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#hhw",
       image:
         "https://images.unsplash.com/photo-1600166898405-da9535204843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
     },
     {
-      name: "Furniture",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/furniture",
+      name: "Tires",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#tir",
       image:
         "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
     {
-      name: "Beauty and makeup packaging",
-      description: "Take-back recycling scheme",
-      url: "https://www.recyclenow.com/news-and-campaigns/take-back-schemes-for-beauty-grooming-packaging-difficult-recycle",
+      name: "Metal",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#metal",
       image:
         "https://images.unsplash.com/photo-1631730486572-226d1f595b68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80",
     },
     {
-      name: "Food waste",
-      description: "Recyclable at home",
-      url: "https://www.recyclenow.com/how-to-recycle/how-to-recycle-food-waste",
+      name: "Miscellaneous",
+      url: "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables#miscellaneous",
       image:
         "https://images.unsplash.com/photo-1553787434-45e1d245bfbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1010&q=80",
-    },
-    {
-      name: "Plastic bags and wrapping",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/plastic-bags-and-wrapping",
-      image:
-        "https://images.unsplash.com/photo-1597348989645-46b190ce4918?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    },
-    {
-      name: "Bubble Wrap",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/plastic-bags-and-wrapping",
-      image:
-        "https://images.unsplash.com/photo-1589322448752-5c05f2e9ca21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=411&q=80",
-    },
-    {
-      name: "Wrapping paper",
-      description: "Recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/wrapping-paper",
-      image:
-        "https://images.unsplash.com/photo-1640116682712-94bf1c17abe2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-    },
-    {
-      name: "Frozen food bags",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/plastic-bags-and-wrapping",
-      image:
-        "https://images.unsplash.com/photo-1574217451061-ad95a5fc773f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    },
-    {
-      name: "Fruit and Vegetable Nets",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/plastic-bags-and-wrapping",
-      image:
-        "https://images.unsplash.com/photo-1443933223857-9ca346228f72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
-    },
-    {
-      name: "Breakfast cereal liners",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/plastic-bags-and-wrapping",
-      image:
-        "https://images.unsplash.com/photo-1582401656496-9d75f95f9018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2VyZWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Crisp packets 2",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/crisp-packets",
-      image:
-        "https://images.unsplash.com/photo-1579384264577-79580c9d3a36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y3Jpc3BzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Cling wrap",
-      description: "Not recyclable",
-      url: "https://www.recyclenow.com/recycle-an-item/cling-film",
-      image:
-        "https://images.unsplash.com/photo-1603847734787-9e8a3f3e9d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhc3RpY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Kitchen towel",
-      description: "Not recyclable",
-      url: "https://www.recyclenow.com/recycle-an-item/kitchen-towel",
-      image:
-        "https://images.unsplash.com/photo-1550963295-019d8a8a61c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-    },
-    {
-      name: "Tissues",
-      description: "Not recyclable",
-      url: "https://www.recyclenow.com/recycle-an-item/tissues",
-      image:
-        "https://images.unsplash.com/photo-1607516531499-9e57ef94a9d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3386&q=80",
-    },
-    {
-      name: "Plastic straws",
-      description: "Not recyclable",
-      url: "https://www.recyclenow.com/recycle-an-item/plastic-straws",
-      image:
-        "https://images.unsplash.com/photo-1615723093586-1ad38d59056b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RyYXd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Medicines",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/medicines",
-      image:
-        "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Compostable plastics",
-      description: "Compostable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/compostable-plastics",
-      image:
-        "https://images.unsplash.com/photo-1640045435497-4c65fb5b26ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    },
-    {
-      name: "Black plastic packaging",
-      description: "Sometimes recyclable at home",
-      url: "https://www.recyclenow.com/recycle-an-item/black-plastic-packaging",
-      image:
-        "https://images.unsplash.com/photo-1585511582331-14e7c5f89735?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    },
-    {
-      name: "Make up packaging",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/make-up-packaging",
-      image:
-        "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-    },
-    {
-      name: "DVDs and CDs",
-      description: "Recyclable out of home",
-      url: "https://www.recyclenow.com/recycle-an-item/dvds-and-cds",
-      image:
-        "https://images.unsplash.com/photo-1602217709694-e3e0340861a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     },
   ];
 

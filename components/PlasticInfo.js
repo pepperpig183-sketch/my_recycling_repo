@@ -148,11 +148,11 @@ const PlasticInfo = (props) => {
 			}
 			<div className={styles.buttons}>
 				{props.type === 8 ?
-				<a href={"https://www2.calrecycle.ca.gov/wheretorecycle/"} target="_blank" className={styles.more}>
+				<a href={"https://search.earth911.com/?utm_source=earth911-header"} target="_blank" className={styles.more}>
 					Learn more
 				</a>
 				:
-				<a href={"https://www2.calrecycle.ca.gov/wheretorecycle/"} target="_blank" className={styles.more}>
+				<a href={"https://search.earth911.com/?utm_source=earth911-header"} target="_blank" className={styles.more}>
 					Learn more
 				</a>
 				}
