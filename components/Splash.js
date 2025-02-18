@@ -7,7 +7,7 @@ import Viewer from "./Viewer";
 import Settings from "./Settings";
 
 const Splash = (props) => {
-	const [getStarted, setGetStarted] = useState(true);
+	const [getStarted, setGetStarted] = useState(false);
 	const [done, setDone] = useState(true);
 	const [done2, setDone2] = useState(false);
 	const [view, setView] = useState(false);
