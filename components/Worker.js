@@ -24,7 +24,6 @@ addEventListener("message", async ({ data }) => {
 
   if (!Model) {
     console.log(tf);
-    // Make sure to update the NEXT_PUBLIC_MODEL_URL environment variable on Vercel (or .env file) to point to the model.json file
     Model = await tf.loadGraphModel(process.env.NEXT_PUBLIC_MODEL_URL);
   }
   const result = await Model.predict(tf.expandDims(input, 0));
