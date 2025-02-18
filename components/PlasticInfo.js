@@ -4,17 +4,17 @@ import styles from "./../styles/PlasticInfo.module.css"
 const PlasticInfo = (props) => {
 	const [info, setInfo] = useState({
 		title:"How to recycle",
-		subtitle:"From londonrecycles.co.uk",
+		subtitle:"According to recyclenow.com",
 		steps: [
-			"Empty and rinse the container",
-			"Leave labels, lids, and tops on",
-			"Squash to save space",
-			"Recycle with a clear recycling sack or a communal wheeled bin"
+			"Rinse out the container",
+			"Keep lids and labels on",
+			"Flatten to save space",
+			"Place it in a clear recycling bag or trashcan."
 		],
 		no: true,
 		nolist: [
-			"Plastic bottles containing chemicals (e.g. antifreeze)",
-			"Make-up packaging",
+			"Plastic bottles containing chemicals (ex. antifreeze)",
+			"Makeup packaging",
 			"Plastic bags and film"
 		]
 	});
@@ -23,27 +23,27 @@ const PlasticInfo = (props) => {
 		if (props.type === 1 || props.type === 2 || props.type === 5) {
 			setInfo({
 					title:"How to recycle",
-					subtitle:"From recyclenow.com",
+					subtitle:"According to recyclenow.com",
 					steps: [
-						"Empty and rinse the container",
-						"Leave labels, lids, and tops on",
-						"Squash to save space",
-						"Recycle according to your council’s guidance"
+						"Rinse out the container",
+						"Keep lids and labels on",
+						"Flatten to save space",
+						"Follow your local city council's guidance on recycling"
 					],
 					no: true,
 					nolist: [
-						"Plastic bottles containing chemicals (e.g. antifreeze)",
-						"Make-up packaging",
+						"Plastic bottles containing chemicals (ex. antifreeze)",
+						"Makeup packaging",
 						"Plastic bags and film"
 					]
 				})
 		} else if (props.type === 3) {
 			setInfo({
 				title:"What to do",
-				subtitle:"From recyclenow.com",
+				subtitle:"According to recyclenow.com",
 				steps: [
-					"Put smaller items, like medicine blister packs in the bin",
-					"Larger things, like gutters and window sills can go to your local tip or reuse and recycling centre"
+					"Dispose of smaller items (ex. blister packs for medication) in a trashcan",
+					"Larger things (ex. pipes, shower curtains) can go to residential recycling centers"
 				],
 				no: false,
 				nolist: [
@@ -53,10 +53,10 @@ const PlasticInfo = (props) => {
 		}	else if (props.type === 4) {
 			setInfo({
 				title:"What to do",
-				subtitle:"From recyclenow.com",
+				subtitle:"According to recyclenow.com",
 				steps: [
-					"Check out TerraCycle for hard-to-recycle items",
-					"Things like plastic bags, bread bags, films and frozen veg bags can be taken to supermarket plastic bag recycling points"
+					"Donate or sell functional household items to people in need",
+					"Plastic bags, bread bags, etc. can be taken to grocery stores or pharmacies near you"
 				],
 				no: false,
 				nolist: [
@@ -66,10 +66,10 @@ const PlasticInfo = (props) => {
 		} else if (props.type === 6) {
 			setInfo({
 				title:"What to do",
-				subtitle:"From recyclenow.com",
+				subtitle:"According to recyclenow.com",
 				steps: [
-					"Polystyrene can’t be recycled and should go in your rubbish bin",
-					"Avoid it if possible or try and reuse it"
+					"Polystyrene/Styrofoam can’t be recycled and should be thrown away",
+					"Avoid using it if possible or try and reuse it"
 				],
 				no: false,
 				nolist: [
@@ -79,10 +79,10 @@ const PlasticInfo = (props) => {
 		} else if (props.type === 7) {
 			setInfo({
 				title:"What to do",
-				subtitle:"From recyclenow.com",
+				subtitle:"According to recyclenow.com",
 				steps: [
-					"If you have things like DVDs and sunglasses you no longer need, donate them to a charity shop if they’re in good condition",
-					"Check out TerraCycle for hard-to-recycle items."
+					"Donate or sell functional goods (ex. DVDs, sunglasses)",
+					"Try to upycycle these items (ex. a suncatcher out of DVDs)."
 				],
 				no: false,
 				nolist: [
@@ -91,12 +91,11 @@ const PlasticInfo = (props) => {
 			})
 		} else if (props.type === 8) {
 			setInfo({
-				title:"What to do",
-				subtitle:"Resolve the issue",
+				title:"What to do?",
 				steps: [
-					"Find the plastic resin code on your item. It should have a triangle shape with arrows and a number within",
-					"Make sure to keep the code in the center of your picture and as focused as possible",
-					"If your item does not have a resin code, search for your item in the Home page"
+					"Look for the plastic resin code on your item—it’s usually inside a triangle made of arrows with a number in the center.",
+					"Position the code in the middle of your photo and ensure it's clear and in focus.",
+					"If there’s no resin code on your item, try searching for it on the Home page."
 				],
 				no: false,
 				nolist: [
@@ -149,11 +148,7 @@ const PlasticInfo = (props) => {
 			}
 			<div className={styles.buttons}>
 				{props.type === 8 ?
-				<a href="mailto:hi@alyssax.com" target="_blank" className={styles.more}>
-					Support
-				</a>
-				:
-				<a href={"https://www.recyclenow.com/recycling-locator"} target="_blank" className={styles.more}>
+				<a href={"https://www2.calrecycle.ca.gov/wheretorecycle/"} target="_blank" className={styles.more}>
 					Learn more
 				</a>
 				}
