@@ -1,10 +1,8 @@
 # sustAIably
 
-##put gif of it working here??
-
 Use sustAInably to help you recycle your plastic waste with AI!
 
-👉 [try sustAInably here](https://myrecyclingrepo.vercel.app/)
+🔗 [try sustAInably here](https://myrecyclingrepo.vercel.app/)
 
 ## Features
 

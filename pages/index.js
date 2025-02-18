@@ -15,8 +15,6 @@ export default function Home() {
   // Saved preferences
   useEffect(() => {
     if (typeof window !== "undefined") {
-      //localStorage.removeItem("region");
-      //localStorage.removeItem("onboarding");
 
       if (localStorage.getItem("region") != null) {
         setRegion(parseInt(localStorage.getItem("region")));
